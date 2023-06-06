@@ -1,5 +1,5 @@
 # My-snapchat
-My_snapchat is a project I'm doing with a friend (Xeroce) that aims to recreate snapchat in native react. 
+My_snapchat is a project I'm doing with a friend (@Xer0ce) that aims to recreate snapchat in native react. 
 It's the first time I see this new language react native.
 
 ![MicrosoftTeams-image](https://github.com/felixlvu/My-snapchat/assets/114921279/e3e12633-e629-4c1d-9094-78762fafd00e)
