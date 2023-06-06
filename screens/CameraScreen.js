@@ -55,7 +55,7 @@
 
     const handleGesture = (gestureState) => {
       if (gestureState && gestureState.dx < -100) {
-        navigation.navigate('WhiteScreen');
+        navigation.navigate('StoryScreen');
       }
     };
 
