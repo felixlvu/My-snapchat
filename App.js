@@ -21,13 +21,14 @@ export default function App() {
           screenOptions={{
             headerShown: false,
             gestureEnabled: true,
+            gestureDirection: 'horizontal',
           }}
         >
           <Stack.Screen name="Home" component={HomeScreen} />
-          <Stack.Screen name="Inscription" component={InscriptionScreen} />
-          <Stack.Screen name="Camera" component={CameraScreen} />
-          <Stack.Screen name="WhiteScreen" component={WhiteScreen} />
-          <Stack.Screen name="Photo" component={PhotoScreen} />
+          <Stack.Screen name="Inscription" component={InscriptionScreen} options={{ gestureEnabled: false }} />
+          <Stack.Screen name="Camera" component={CameraScreen} options={{ gestureEnabled: false }} />
+          <Stack.Screen name="WhiteScreen" component={WhiteScreen} options={{ gestureEnabled: false }} />
+          <Stack.Screen name="Photo" component={PhotoScreen} options={{ gestureEnabled: false }} />
         </Stack.Navigator>
       </NavigationContainer>
     </View>
