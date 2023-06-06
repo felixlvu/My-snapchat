@@ -14,18 +14,18 @@
     "expo": "^48.0.16",
     "expo-av": "~13.2.1",
     "expo-camera": "~13.2.1",
-    "expo-image-picker": "^14.1.1",
+    "expo-image-picker": "~14.1.1",
     "expo-media-library": "~15.2.3",
     "expo-permissions": "~14.1.1",
     "expo-status-bar": "~1.4.4",
-    "react": "^18.2.0",
+    "firebase": "^9.22.1",
+    "react": "18.2.0",
     "react-native": "0.71.8",
     "react-native-gesture-handler": "~2.9.0",
     "react-native-permissions": "^3.8.0",
     "react-native-reanimated": "~2.14.4",
     "react-native-status-bar-height": "^2.6.0",
-    "react-navigation": "^4.4.4",
-    "firebase": "^9.0.0"
+    "react-navigation": "^4.4.4"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
