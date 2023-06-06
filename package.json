@@ -24,7 +24,8 @@
     "react-native-permissions": "^3.8.0",
     "react-native-reanimated": "~2.14.4",
     "react-native-status-bar-height": "^2.6.0",
-    "react-navigation": "^4.4.4"
+    "react-navigation": "^4.4.4",
+    "firebase": "^9.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
