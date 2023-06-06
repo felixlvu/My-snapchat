@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { StyleSheet, View, TouchableOpacity, Animated, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { Ionicons } from '@expo/vector-icons';
 
 const WhiteScreen = () => {
   const navigation = useNavigation();
@@ -19,7 +20,8 @@ const WhiteScreen = () => {
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.button} onPress={handleButtonPress}>
+      <TouchableOpacity style={styles.backButton} onPress={handleButtonPress}>
+        <Ionicons name="arrow-back" size={24} color="white" />
       </TouchableOpacity>
       <Animated.View
         style={[styles.content, { transform: [{ translateX: pan.x }, { translateY: pan.y }] }]}
@@ -36,10 +38,16 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  button: {
-    width: 50,
-    height: 50,
+  backButton: {
+    position: 'absolute',
+    top: 20,
+    left: 20,
     backgroundColor: 'black',
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   content: {
     flex: 1,
