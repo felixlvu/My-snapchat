@@ -7,7 +7,7 @@ const WhiteScreen = () => {
   const pan = useRef(new Animated.ValueXY()).current;
 
   const handleButtonPress = () => {
-    Alert.alert('Alerte', 'bite');
+    navigation.navigate('Camera');
   };
 
   useEffect(() => {
@@ -33,11 +33,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'white',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   button: {
-    position: 'absolute',
-    top: 20,
-    left: 20,
     width: 50,
     height: 50,
     backgroundColor: 'black',

@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Camera } from 'expo-camera';
 import * as MediaLibrary from 'expo-media-library';
-import { StyleSheet, View, TouchableOpacity, PanResponder, Alert, Text } from 'react-native';
+import { StyleSheet, View, TouchableOpacity, Alert, Text } from 'react-native';
+import { PanResponder } from 'react-native';
 
 const CameraScreen = ({ navigation }) => {
   const [hasPermission, setHasPermission] = useState(null);
   const cameraRef = useRef(null);
   const [isRecording, setIsRecording] = useState(false);
-  const [showWhiteScreen, setShowWhiteScreen] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -55,7 +55,6 @@ const CameraScreen = ({ navigation }) => {
 
   const handleGesture = (gestureState) => {
     if (gestureState && gestureState.dx < -100) {
-      setShowWhiteScreen(true);
       navigation.navigate('WhiteScreen');
     }
   };
@@ -93,7 +92,6 @@ const CameraScreen = ({ navigation }) => {
           </View>
         </Camera>
       )}
-      {showWhiteScreen && <View style={styles.whiteScreen} />}
     </View>
   );
 };
@@ -120,14 +118,6 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
   },
   captureButtonRecord: {
-    backgroundColor: 'white',
-  },
-  whiteScreen: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
     backgroundColor: 'white',
   },
   captureButtonText: {

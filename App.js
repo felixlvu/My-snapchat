@@ -21,7 +21,6 @@ export default function App() {
           screenOptions={{
             headerShown: false,
             gestureEnabled: true,
-            gestureDirection: 'horizontal',
           }}
         >
           <Stack.Screen name="Home" component={HomeScreen} />
