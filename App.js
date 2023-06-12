@@ -8,6 +8,7 @@ import InscriptionScreen from './screens/InscriptionScreen';
 import CameraScreen from './screens/CameraScreen';
 import PhotoScreen from './screens/PhotoScreen';
 import StoryScreen from './screens/StoryScreen';
+import MessageScreen from './screens/MessageScreen';
 
 const Stack = createStackNavigator();
 
@@ -26,6 +27,7 @@ export default function App() {
         >
           <Stack.Screen name="Home" component={HomeScreen} />
           <Stack.Screen name="Inscription" component={InscriptionScreen} options={{ gestureEnabled: false }} />
+          <Stack.Screen name="Message" component={MessageScreen} options={{ gestureEnabled: false }} />
           <Stack.Screen name="Camera" component={CameraScreen} options={{ gestureEnabled: false }} />
           <Stack.Screen name="StoryScreen" component={StoryScreen} options={{ gestureEnabled: false }} />
           <Stack.Screen name="Photo" component={PhotoScreen} options={{ gestureEnabled: false }} />
